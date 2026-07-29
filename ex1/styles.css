@@ -1,0 +1,27 @@
+body {
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding:0;
+    }
+    header {
+    background-color: #d9d9d9c2; color: #fff;
+    padding: 10px; text-align: centre;
+    }
+    Navul {
+    list-style: none; padding: 0; display: flex;
+    justify-content: center;
+    }
+    Navli {
+    margin: 010px;
+    }
+    Main {
+    padding: 20px;
+    }
+    .headColor{
+        color: blue;
+    }
+
+    .form{
+        padding: 50px;
+        border: 1px solid #d6d4d4;
+    }
