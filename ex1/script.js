@@ -6,7 +6,7 @@ const catalog = [
     //Function to load the catalog 
     function loadCatalog() {
     const catalogContainer=document.getElementById('content'); 
-    catalogContainer.innerHTML = '<h2>Catalog</h2>'; 
+    catalogContainer.innerHTML = '<h2>Cart</h2>'; 
     catalog.forEach(product => {
     const productCard=document.createElement('div');
      productCard.classList.add('product-card'); productCard.innerHTML = `
