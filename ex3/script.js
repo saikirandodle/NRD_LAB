@@ -56,5 +56,68 @@ function validateLogin() {
   return true;
 }
 
+function validateRegisterEmail(email) {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (email.trim() === '') return 'Email is required.';
+  if (!emailPattern.test(email)) return 'Please enter a valid email address.';
+  return '';
+}
+
+function validateRegisterPassword(password) {
+  if (password.trim() === '') return 'Password is required.';
+  if (password.length < 8) return 'Password must be at least 8 characters long.';
+  if (!/[A-Z]/.test(password)) return 'Password must include at least one uppercase letter.';
+  if (!/[a-z]/.test(password)) return 'Password must include at least one lowercase letter.';
+  if (!/[0-9]/.test(password)) return 'Password must include at least one number.';
+  if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+    return 'Password must include at least one special character.';
+  }
+  return '';
+}
+
+function setupRegisterValidation() {
+  const registerForm = document.getElementById('registerForm');
+  if (!registerForm) return;
+
+  registerForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const emailInput = document.getElementById('exampleInputEmail1');
+    const passwordInput = document.getElementById('exampleInputPassword1');
+    const emailError = document.getElementById('registerEmailError');
+    const passwordError = document.getElementById('registerPasswordError');
+
+    const emailMessage = validateRegisterEmail(emailInput.value);
+    const passwordMessage = validateRegisterPassword(passwordInput.value);
+
+    emailInput.classList.remove('is-invalid', 'is-valid');
+    passwordInput.classList.remove('is-invalid', 'is-valid');
+
+    if (emailMessage) {
+      emailInput.classList.add('is-invalid');
+      emailError.textContent = emailMessage;
+    } else {
+      emailInput.classList.add('is-valid');
+      emailError.textContent = '';
+    }
+
+    if (passwordMessage) {
+      passwordInput.classList.add('is-invalid');
+      passwordError.textContent = passwordMessage;
+    } else {
+      passwordInput.classList.add('is-valid');
+      passwordError.textContent = '';
+    }
+
+    if (!emailMessage && !passwordMessage) {
+      alert('Registration validation successful.');
+      registerForm.reset();
+      emailInput.classList.remove('is-valid');
+      passwordInput.classList.remove('is-valid');
+    }
+  });
+}
+
 loadCatalog();
+setupRegisterValidation();
    

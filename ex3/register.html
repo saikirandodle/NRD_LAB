@@ -30,15 +30,18 @@
         <div class="card shadow-sm">
           <div class="card-body p-4">
             <h2 class="card-title text-center mb-4">Registration</h2>
-            <form>
+            <form id="registerForm" novalidate>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
                 <small id="emailHelp" class="form-text text-muted">We’ll never share your email with anyone else.</small>
+                <div class="invalid-feedback" id="registerEmailError"></div>
               </div>
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                <div class="form-text">Use at least 8 characters with uppercase, lowercase, number, and special character.</div>
+                <div class="invalid-feedback" id="registerPasswordError"></div>
               </div>
               <div class="d-grid">
                 <button type="submit" class="btn btn-primary">Submit</button>
