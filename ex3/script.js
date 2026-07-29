@@ -39,5 +39,22 @@ function addToCart(productId) {
   }
 }
 
+function validateLogin() {
+  const username = document.getElementById('exampleInputEmail1').value;
+  const password = document.getElementById('exampleInputPassword1').value;
+
+  if (username.trim() === '' || password.trim() === '') {
+    alert('Please enter both username and password.');
+    return false;
+  }
+
+  if (username.length > 4) {
+    alert('Success');
+  } else {
+    alert('Username should have more than 6 characters');
+  }
+  return true;
+}
+
 loadCatalog();
    
