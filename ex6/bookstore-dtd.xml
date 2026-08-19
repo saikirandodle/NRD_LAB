@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookstore SYSTEM "bookstore.dtd">
+
+<bookstore>
+    <book id="B101">
+        <title>XML Fundamentals</title>
+        <author>John Smith</author>
+        <publisher>Tech Publications</publisher>
+        <price>450.50</price>
+        <year>2024</year>
+    </book>
+
+    <book id="B102">
+        <title>Learning XSD</title>
+        <author>Jane Doe</author>
+        <publisher>Code House</publisher>
+        <price>550.00</price>
+        <year>2023</year>
+    </book>
+</bookstore>
