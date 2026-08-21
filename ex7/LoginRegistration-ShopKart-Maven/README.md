@@ -489,15 +489,3 @@ Then use:
 ```text
 http://localhost:8081/shopkart/login.html
 ```
-
-# Security Note
-
-This project is intended for learning/demo purposes.
-
-The sample application stores passwords as plain text for simplicity. A production application should use secure password hashing such as BCrypt or Argon2.
-
-Do not commit real database passwords or other secrets to GitHub.
-
-# Author
-
-ShopKart - Java Servlet / Maven / MySQL / Bootstrap Learning Project
