@@ -1,0 +1,87 @@
+# ==============================
+# Java
+# ==============================
+
+*.class
+*.log
+
+# ==============================
+# Maven
+# ==============================
+
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# ==============================
+# Eclipse
+# ==============================
+
+.classpath
+.project
+.settings/
+.factorypath
+.springBeans
+.sts4-cache/
+
+# ==============================
+# Eclipse Server / Tomcat
+# ==============================
+
+.metadata/
+Servers/
+server.xml
+context.xml
+
+# ==============================
+# IntelliJ IDEA
+# ==============================
+
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# ==============================
+# VS Code
+# ==============================
+
+.vscode/
+
+# ==============================
+# OS Generated Files
+# ==============================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Temporary Files
+# ==============================
+
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# ==============================
+# Environment / Secrets
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Local Database Configuration
+# ==============================
+
+application-local.properties
+application-local.yml
+
+# ==============================
+# Build Output
+# ==============================
+
+*.war
+*.jar
