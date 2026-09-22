@@ -429,6 +429,6 @@ Recommended tools:
 
 ---
 
-## 📖 Full Stack Development Lab
+## 📖NRD Lab
 
 This repository is intended for **academic laboratory practice and learning purposes** and contains implementations covering the complete progression from frontend development to backend development, database integration, REST APIs, authentication, React applications, API integration, visualization, and deployment.
