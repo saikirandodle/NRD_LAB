@@ -111,19 +111,7 @@ Open:
 src/main/java/com/shopkart/DBConnection.java
 ```
 
-Find:
-
-```java
-private static final String PASSWORD = "root";
-```
-
-Change it to your actual MySQL password.
-
-For example:
-
-```java
-private static final String PASSWORD = "mysql123";
-```
+Find and change it to your actual MySQL password.
 
 Also verify:
 
@@ -501,48 +489,3 @@ Then use:
 ```text
 http://localhost:8081/shopkart/login.html
 ```
-
-# Git Commands
-
-Initialize Git:
-
-```bash
-git init
-```
-
-Add files:
-
-```bash
-git add .
-```
-
-Commit:
-
-```bash
-git commit -m "Initial ShopKart application"
-```
-
-Add GitHub repository:
-
-```bash
-git remote add origin YOUR_GITHUB_REPOSITORY_URL
-```
-
-Push:
-
-```bash
-git branch -M main
-git push -u origin main
-```
-
-# Security Note
-
-This project is intended for learning/demo purposes.
-
-The sample application stores passwords as plain text for simplicity. A production application should use secure password hashing such as BCrypt or Argon2.
-
-Do not commit real database passwords or other secrets to GitHub.
-
-# Author
-
-ShopKart - Java Servlet / Maven / MySQL / Bootstrap Learning Project
