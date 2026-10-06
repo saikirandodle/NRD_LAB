@@ -1,0 +1,12 @@
+.weather-icon {
+  width: 100px;
+}
+
+.footer {
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  right: 0;
+}
